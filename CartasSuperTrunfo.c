@@ -60,7 +60,7 @@ int main(){
     densidadePopulacional2 = populacao2 / area2;
     pibPerCapita1 = pib1 * bilhao / populacao1;
     pibPerCapita2 = pib2 * bilhao / populacao2;
-    superPoder1 = (float) populacao1 + area1 + pib1 + (float) pontosTuristicos1 + pibPerCapita1 / bilhao + (1.0 / densidadePopulacional1);
+    superPoder1 = (float) populacao1 + area1 + pib1 + (float) pontosTuristicos1 + pibPerCapita1 / bilhao + (1.0 / densidadePopulacional1); //divisão do pibPerCapita1 e 2 por bilhao para o valor de superPoder ficar melhor na hora de apresentar. ex.: sem a divisão o valor fica 150000000 com a divisão fica 50.2
     superPoder2 = (float) populacao2 + area2 + pib2 + (float) pontosTuristicos2 + pibPerCapita2 / bilhao + (1.0 / densidadePopulacional2);
 
     vitorias1 += populacao1 > populacao2;
@@ -71,7 +71,7 @@ int main(){
     vitorias2 += pib1 < pib2;
     vitorias1 += pontosTuristicos1 > pontosTuristicos2;
     vitorias2 += pontosTuristicos1 < pontosTuristicos2;
-    vitorias1 += densidadePopulacional1 < densidadePopulacional2;
+    vitorias1 += densidadePopulacional1 < densidadePopulacional2;//sinais inversos pq menor é melhor
     vitorias2 += densidadePopulacional1 > densidadePopulacional2;
     vitorias1 += pibPerCapita1 > pibPerCapita2;
     vitorias2 += pibPerCapita1 < pibPerCapita2;
