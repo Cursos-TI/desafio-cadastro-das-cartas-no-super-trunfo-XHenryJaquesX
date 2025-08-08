@@ -74,7 +74,7 @@ int main(){
     vitorias1 += densidadePopulacional1 < densidadePopulacional2;
     vitorias2 += densidadePopulacional1 > densidadePopulacional2;
     vitorias1 += pibPerCapita1 > pibPerCapita2;
-    vitorias1 += pibPerCapita1 < pibPerCapita2;
+    vitorias2 += pibPerCapita1 < pibPerCapita2;
     vitorias1 += superPoder1 > superPoder2;
     vitorias2 += superPoder1 < superPoder2;
 
