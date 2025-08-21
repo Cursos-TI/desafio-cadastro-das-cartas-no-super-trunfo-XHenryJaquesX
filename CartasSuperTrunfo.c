@@ -279,17 +279,16 @@ int main(){
         default:
         printf("Opção inválida!\n\n");
         break;
-        }
-    }
 
-    if(vitorias1 == vitorias2){
+        if(vitorias1 == vitorias2){
         printf("Entre os dois atributos as cartas empataram em quantidades de vitórias!\n\n");
     } else if (vitorias1 > vitorias2){
         printf("A carta 1 venceu nos 2 atributos\n\n");
     } else{
         printf("A carta 2 venceu nos 2 atributos\n\n");
     }
-
+        }
+    }
     return 0;
 
 }
